@@ -1,0 +1,14 @@
+{
+  "name": "between-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Product showcase for the Between iOS debt tracker",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "node --check dist/assets/js/main.js"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
