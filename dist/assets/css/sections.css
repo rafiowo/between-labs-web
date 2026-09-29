@@ -290,6 +290,7 @@ h2 {
 }
 footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -300,9 +301,18 @@ footer .brand {
   font-size: 25px;
 }
 footer > span,
-footer > a:last-child {
+footer > a:not(.brand) {
   font-size: 12px;
   color: var(--muted);
+}
+footer .copyright {
+  order: 4;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
 }
 .skip {
   position: absolute;
